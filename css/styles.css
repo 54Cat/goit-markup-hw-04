@@ -68,7 +68,6 @@ p:last-child {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* outline: 1px solid aqua; */
 }
 
 .container {
@@ -528,8 +527,8 @@ img {
   fill: var(--primary-icon);
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--hover-icon-bg);
 }
 
@@ -577,7 +576,6 @@ img {
 }
 
 .works-img {
-  /* outline: 1px solid aqua; */
   margin-bottom: 0;
 }
 
@@ -606,8 +604,12 @@ img {
   margin-bottom: 0;
 }
 
-.works-item:hover,
-.works-item:focus {
+.works-link {
+  display: block;
+}
+
+.works-link:hover,
+.works-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
