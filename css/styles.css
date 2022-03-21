@@ -175,12 +175,13 @@ img {
 
 .footer {
   background-color: var(--secondary-bg);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-container {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  align-items: baseline;
 }
 
 .footer-address {
@@ -230,10 +231,6 @@ img {
   margin-bottom: 9px;
 }
 
-.footer-socials {
-  padding-top: 12px;
-}
-
 .footer-social-follow {
   font-family: var(--primary-font);
   font-weight: 700;
@@ -242,8 +239,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light-txt);
-  padding-bottom: 20px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .footer-social-list {
@@ -345,7 +341,8 @@ img {
   cursor: pointer;
 }
 
-.main-btn:hover {
+.main-btn:hover,
+.main-btn:focus {
   background-color: var(--hover-main-btn-bg);
 }
 
@@ -508,9 +505,14 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
-  fill: #afb1b8;
   justify-content: center;
   align-items: center;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  fill: var(--hover-icon-bg);
+  border-color: var(--hover-icon-bg);
 }
 
 .clients-link {
@@ -521,21 +523,24 @@ img {
   align-items: center;
   color: currentColor;
   cursor: pointer;
-}
-
-.clients-logo-icon {
   fill: var(--primary-icon);
 }
 
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid var(--hover-icon-bg);
+.clients-logo-icon {
+  color: currentColor;
 }
 
-.clients-logo-icon:hover,
-.clients-logo-icon:focus {
+.clients-link:focus,
+.clients-link:hover {
   fill: var(--hover-icon-bg);
+  border-color: var(--hover-icon-bg);
 }
+
+/* .clients-logo-icon:focus,
+.clients-logo-icon:hover {
+  fill: var(--hover-icon-bg);
+  border-color: var(--hover-icon-bg);
+} */
 
 /* страница Портфолио*/
 .filter-list {
@@ -563,7 +568,8 @@ img {
   cursor: pointer;
 }
 
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--hover-filter-btn-bg);
